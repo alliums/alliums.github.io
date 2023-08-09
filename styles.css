@@ -1,0 +1,149 @@
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer p{
+    color: #aaaaaa;
+    opacity: 0.25;
+}
+
+footer a {
+    opacity: 0.8;
+}
+
+html {
+    height: 95%;
+}
+
+body {
+    height: 100%;
+    
+}
+
+.content {
+    height: 100%;
+    width: auto;
+    margin: 0px;
+    padding: 2vh 4vw;
+    display: block;
+    /*background-color: #AFAFAF;*/
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(139, 64, 139);
+}
+
+a:active {
+    color: #8b408b;
+}
+
+.button-bar {
+    display: inline-block;
+}
+
+.button {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    /*border-style: solid;
+    border-color: #111111;*/
+    width: 4em;
+    padding: 10px 5px;
+    margin: 0px;
+}
+
+.button:hover, .project-list-item a:hover, footer a:hover {
+    color: rgb(139, 64, 139);
+    text-shadow: rgb(139, 64, 139) 1px 0 10px;
+    transition: color .5s, text-shadow .25s;
+}
+
+#github-logo:hover {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 4px rgb(139, 64, 139));
+    transition: filter .25s;
+}
+
+html {
+    background-color: #111111;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+/*Portfolio Page*/
+
+ul {
+    text-align: center;
+    margin: 0;
+    padding: 0 1em;
+}
+
+li {
+    margin: 1em 0 1em 0 ;
+    display: block;
+    width: auto;
+}
+
+.project-list-category {
+    display: block;
+    text-align: left;
+    margin: 0 5em 1em 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+
+
+.project-list-section {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.project-list {
+    margin: 1em 1em;
+    align-items: center;
+    display: inline-block;
+}
+
+.project-list-item {
+    list-style-type: none;
+    margin: 1em 1em;
+    width: auto;
+}
+
+#github-logo {
+    width: 2em;
+    height: 2em;
+    display: inline block;
+    vertical-align: middle;
+    margin-bottom: .25em
+}
+
+/*snake game*/
+#snake-game-div {
+    justify-content: center;
+}
+
+#snake-game-container {
+    padding: 0 1em 1em;
+    text-align: center;
+}
+  
+#snake-game-canvas {
+    max-width: 300px;
+    max-height: 300px;
+    opacity: 1;
+}
