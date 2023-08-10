@@ -6,6 +6,7 @@ const rows = canvas.height / scale;
 const columns = canvas.width / scale;
 
 var snake;
+var keys = {};
 
 (function setup() {
   snake = new Snake();
@@ -28,4 +29,20 @@ var snake;
 window.addEventListener('keydown', ((evt) => {
   const direction = evt.key.replace('Arrow', '');
   snake.changeDirection(direction);
-}))
+}
+
+))
+window.addEventListener('keydown', 
+    function(e){
+      keys[e.code] = true;
+      switch(e.code) {
+        case "ArrowUp": case "ArrowDown": case "ArrowRight": case "ArrowLeft": case "Space": e.preventDefault(); break;
+        default: break;
+      }
+
+    },
+false
+);
+window.addEventListener('keyup', function(e){keys[e.code] = false;}, false);
+
+

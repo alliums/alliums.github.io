@@ -8,7 +8,7 @@ function Fruit() {
   }
 
   this.draw = function() {
-    ctx.fillStyle = "#4cafab";
+    ctx.fillStyle = "#FFF";
     ctx.fillRect(this.x,this.y,scale,scale);
   }
 }

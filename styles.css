@@ -29,7 +29,7 @@ body {
 .content {
     height: 100%;
     width: auto;
-    margin: 0px;
+    margin: 2em 0;
     padding: 2vh 4vw;
     display: block;
     /*background-color: #AFAFAF;*/
@@ -46,6 +46,7 @@ a:active {
 
 .button-bar {
     display: inline-block;
+    margin: 1em 1em;
 }
 
 .button {
@@ -54,20 +55,23 @@ a:active {
     text-align: center;
     /*border-style: solid;
     border-color: #111111;*/
-    width: 4em;
+    width: 6em;
     padding: 10px 5px;
     margin: 0px;
+    font-size: 2em;
+
 }
 
 .button:hover, .project-list-item a:hover, footer a:hover {
     color: rgb(139, 64, 139);
     text-shadow: rgb(139, 64, 139) 1px 0 10px;
+    /*text-shadow: #c667c6 1px 0 10px;*/
+
     transition: color .5s, text-shadow .25s;
 }
 
 #github-logo:hover {
-    width: 2em;
-    height: 2em;
+
     border-radius: 50%;
     filter: drop-shadow(0 0 4px rgb(139, 64, 139));
     transition: filter .25s;
@@ -116,6 +120,12 @@ li {
     margin: 1em 1em;
     align-items: center;
     display: inline-block;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+
 }
 
 .project-list-item {
@@ -125,19 +135,19 @@ li {
 }
 
 #github-logo {
-    width: 2em;
-    height: 2em;
+    width: 1.75m;
+    height: 1.75em;
     display: inline block;
     vertical-align: middle;
     margin-bottom: .25em
 }
 
 /*snake game*/
-#snake-game-div {
+#snake-game-div, #bubble-clicker-div {
     justify-content: center;
 }
 
-#snake-game-container {
+#snake-game-container, #bubble-clicker-container {
     padding: 0 1em 1em;
     text-align: center;
 }
@@ -146,4 +156,10 @@ li {
     max-width: 300px;
     max-height: 300px;
     opacity: 1;
+}
+
+#bubble-clicker-div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
