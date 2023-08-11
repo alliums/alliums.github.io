@@ -18,6 +18,10 @@ function setup() {
 function mousePressed() {
   for (let i=0;i<bubbles.length;i++) {
     bubbles[i].clicked(mouseX, mouseY);
+    if (bubbles[i].popped == true) {
+      bubbles[i] = new Bubble(0,0,0);
+      bubbles[i].strokeColor = 'rgba(0,0,0,0)';
+    }
   }
 }
 
@@ -36,15 +40,20 @@ class Bubble {
   this.x = x;
   this.y = y;
   this.w = w;
+  var popped = false;
   var colorVal;
   this.colorVal = 'rgb(0,0,0)';
+  var strokeColor;
+  this.strokeColor = 'rgb(255,255,255,0.5)';
   }
   
   clicked(pixelX, pixelY) {
     let distance = dist(pixelX, pixelY, this.x, this.y);
     if (distance < this.w) {
-      this.colorVal = 'rgba(198, 0, 198, 0.5)';
+      //this.colorVal = 'rgba(198, 0, 198, 0.5)';
+      this.popped=true;
     }
+
   }
   
   move() {
@@ -53,10 +62,12 @@ class Bubble {
   }
   
   show() {
-    stroke('rgba(255,255,255,0.5)');
+    stroke(this.strokeColor);
     strokeWeight(3.5);
     fill(this.colorVal);
     ellipse(this.x, this.y, this.w*2);
   }
   
+
+
 }

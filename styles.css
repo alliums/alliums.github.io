@@ -143,11 +143,11 @@ h1 {
 }
 
 /*snake game*/
-#snake-game-div, #bubble-clicker-div {
+#snake-game-div, #bubble-clicker-div, #fruit-catcher-div {
     justify-content: center;
 }
 
-#snake-game-container, #bubble-clicker-container {
+#snake-game-container, #bubble-clicker-container, #fruit-catcher-container {
     padding: 0 1em 1em;
     text-align: center;
 }
@@ -158,7 +158,12 @@ h1 {
     opacity: 1;
 }
 
-#bubble-clicker-div {
+#fruit-catcher-canvas {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+#bubble-clicker-div, #fruit-catcher-div{
     display: flex;
     justify-content: center;
     align-content: center;
