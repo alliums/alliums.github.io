@@ -163,6 +163,10 @@ h1 {
     max-height: 600px;
 }
 
+#weather-container {
+    background-color: blue;
+}
+
 #bubble-clicker-div, #fruit-catcher-div{
     display: flex;
     justify-content: center;
