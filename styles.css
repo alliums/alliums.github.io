@@ -167,7 +167,7 @@ h1 {
     background-color: blue;
 }
 
-#bubble-clicker-div, #fruit-catcher-div{
+#bubble-clicker-div, #fruit-catcher-div, #boid-div{
     display: flex;
     justify-content: center;
     align-content: center;
