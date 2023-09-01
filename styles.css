@@ -147,7 +147,7 @@ h1 {
     justify-content: center;
 }
 
-#snake-game-container, #bubble-clicker-container, #fruit-catcher-container {
+#snake-game-container, #bubble-clicker-container, #fruit-catcher-container, #matrix-rain-container{
     padding: 0 1em 1em;
     text-align: center;
 }
