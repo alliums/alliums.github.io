@@ -62,7 +62,7 @@ a:active {
 
 }
 
-.button:hover, .project-list-item a:hover, footer a:hover {
+.button:hover, .project-list-item a:hover, footer a:hover, .email-address a:hover {
     color: rgb(139, 64, 139);
     text-shadow: rgb(139, 64, 139) 1px 0 10px;
     /*text-shadow: #c667c6 1px 0 10px;*/
@@ -101,14 +101,12 @@ li {
 
 .project-list-category {
     display: block;
-    text-align: left;
-    margin: 0 5em 1em 0;
+    text-align: center;
+    margin: 0;
     padding: 0;
     color: rgba(255, 255, 255, 0.5);
 
 }
-
-
 
 .project-list-section {
     width: 100%;
@@ -171,4 +169,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+#matrix-rain-container, #boid-container {
+    padding: 0;
+    margin: auto;
+    min-width: 75vw;
+    max-width: 80vw;
+    min-height: 85vh;
+    max-height: 90vh;
 }

@@ -2,8 +2,10 @@ var symbolSize = 10;
 var streams = [];
 
 function setup() {
-  let cnv= createCanvas(800, 600);
-  background(17);
+  var matrixWidth = document.getElementById('matrix-rain-container').getBoundingClientRect().width;
+  var matrixHeight = document.getElementById('matrix-rain-container').getBoundingClientRect().height;
+  let cnv= createCanvas(matrixWidth, matrixHeight);
+  background('#111111');
 
   cnv.parent('matrix-rain-container');
   frameRate(30);
@@ -21,14 +23,14 @@ function setup() {
 }
 
 function draw() {
-  background(0, 100);
+  background('#111111');
   streams.forEach(function(stream) {
     stream.render();
   });
 }
 
 function draw() {
-  background(0, 100);
+  background('#111111');
   streams.forEach(function(stream) {
     stream.render();
   });

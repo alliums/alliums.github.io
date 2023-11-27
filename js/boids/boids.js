@@ -15,7 +15,10 @@ var boidShape;
 //TODO: make boids array
 
 function setup() {
-  let cnv= createCanvas(1280, 720);
+  var boidWidth = document.getElementById('boid-container').getBoundingClientRect().width;
+  var boidHeight = document.getElementById('boid-container').getBoundingClientRect().height;
+  
+  let cnv= createCanvas(boidWidth, boidHeight);
   background(17);
 
   cnv.parent('boid-container');
